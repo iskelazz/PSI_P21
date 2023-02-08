@@ -4,32 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 
-import com.google.android.material.tabs.TabLayout;
-
-public class MainActivity extends AppCompatActivity {
-    //Paquete P21.Rivera y sdk 25
+public class segunda_activ extends AppCompatActivity {
     String TAG = "TAG";
-    String ACTIV = "MainAtiv";
-    Button button;
-
-    @Override
-    public <T extends View> T findViewById(int id) {
-        return super.findViewById(id);
-    }
+    String ACTIV = "segunda_activ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        button = findViewById(R.id.boton);
-        //button setonclickListener(view.onClickListener)
-        /*@Override
-        public void onClick(View w){
-            button.setText(getString(R.string.button))
-        */
-        }
+        setContentView(R.layout.activity_segunda);
     }
 
     @Override
