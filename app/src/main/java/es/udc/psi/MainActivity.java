@@ -5,32 +5,36 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.tabs.TabLayout;
 
 public class MainActivity extends AppCompatActivity {
     //Paquete P21.Rivera y sdk 25
     String TAG = "TAG";
-    String ACTIV = "MainAtiv";
+    String ACTIV = "MainActivity";
     Button button;
 
-    @Override
+   /* @Override
     public <T extends View> T findViewById(int id) {
         return super.findViewById(id);
-    }
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         button = findViewById(R.id.boton);
-        //button setonclickListener(view.onClickListener)
-        /*@Override
-        public void onClick(View w){
-            button.setText(getString(R.string.button))
-        */
-        }
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, ACTIV="onCreate");
+                button.setText(R.string.new_text_button);
+            }
+        });
     }
+
+
 
     @Override
     protected void onStart() {

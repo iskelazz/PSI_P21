@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">P13.Rivera</string>
+    <string name="text_view_string">Hola Mundo!</string>
+    <string name="new_text_button">Boton</string>
+</resources>

@@ -12,7 +12,7 @@
         android:theme="@style/Theme.P13Rivera"
         tools:targetApi="31">
         <activity
-            android:name=".segunda_activ"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".segunda_activ"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
